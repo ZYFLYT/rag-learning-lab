@@ -1,0 +1,24 @@
+# 虚拟环境
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# API密钥文件
+.env
+*.env
+
+# 向量库持久化
+chroma/
+faiss_index/
+
+# 本地文档素材
+temp_docs/
+
+# IDE
+.vscode/
+.idea/
+
+# 日志
+*.log
