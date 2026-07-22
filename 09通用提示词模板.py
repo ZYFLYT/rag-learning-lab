@@ -1,5 +1,3 @@
-from os import getenv
-
 from langchain_core.prompts import PromptTemplate
 from langchain_deepseek import ChatDeepSeek
 from dotenv import load_dotenv
@@ -13,7 +11,7 @@ prompt_template=PromptTemplate.from_template(
 
 model=ChatDeepSeek(
     model="deepseek-v4-flash",
-    api_key=getenv("DEEPSEEK_API_KEY"),
+    api_key=os.getenv("DEEPSEEK_API_KEY"),
     temperature=0.8
 )
 
